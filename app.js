@@ -9,6 +9,8 @@ const indexRouter=require('./routes/index.js')
 //创建服务器
 let app=express();
 app.listen(8080);
+app.use(express.static('public'));
+
 
  //应用路由器，给路由器下的每个路由添加前缀(重点)
 // /login      /user/login                
